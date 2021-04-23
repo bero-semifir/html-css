@@ -1,0 +1,213 @@
+/* 
+OLD ROSE
+#B8583E
+
+Light steel blue
+#CAD5DF
+
+Dark Slate gray
+#1F2C2A
+
+light slate gray
+#739195
+#8CA8B0
+
+*/
+
+.main-theme
+{
+    background-color: #739195 ;
+}
+
+.light-theme
+{
+    background-color: #CAD5DF;
+}
+
+.dark-theme, h1 ,h2, h3, h4
+{
+    background-color: #1F2C2A;
+    color:#B8583E;
+}
+
+.color-theme{
+    background-color: #B8583E ;
+}
+
+/* Style des titres */
+h1,h2,h3,h4 {
+    /* arrondis du block */
+    border-radius: 10px;
+    text-align: center;
+    /* marge exterieure */
+    margin: 0 5%;
+    /* marge intérieure */
+    padding: 10px;
+}
+
+article{
+    padding: 2%;
+    background-color: rgba(115, 145, 149,0.8);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    -webkit-box-shadow: 10px 10px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px 1px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 12px 1px rgba(0,0,0,0.75);
+}
+
+li{
+    list-style-type: square;
+}
+
+body{
+    /* image avec parallax */
+    background-image: url("../images/benjamin-suter-small.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin:auto;
+}
+
+aside{
+    float:left;
+    position: fixed;
+}
+
+section{
+    float: right;
+}
+
+footer {
+    clear:both;
+    padding: 15px 0;
+    text-align: center;
+}
+
+a{
+    color:#B8583E
+}
+
+a:visited{
+    color: #97381f
+}
+
+/* Padding */
+
+.p1{
+    padding: 1em;
+}
+
+.p2{
+    padding: 2em;
+}
+
+.p3{
+    padding: 3em;
+}
+
+.p4{
+    padding: 4em;
+}
+
+/* Margin */
+
+.m2{
+    margin: 10vh 10vw;
+}
+
+.m4{
+    margin:20vh 20vw;
+}
+
+/* Margin-Top */
+
+.mt2{
+    margin-top: 10vh;
+}
+.mt4{
+    margin-top: 20vh;
+}
+
+/* Margin-Bottom */
+
+.mb2{
+    margin-bottom: 10vh;
+}
+.mb4{
+    margin-bottom: 20vh;
+}
+
+/* Margin-right */
+
+.mr2{
+    margin-right: 10vw;
+}
+.mr4{
+    margin-right: 20vw;
+}
+
+/* Margin vertical */
+
+.mv-auto{
+    margin: auto 0;
+}
+
+/* margin horizontal */
+
+.mh-auto{
+    margin: 0 auto;;
+}
+
+/* Largeur d'un élément */
+
+.w10{
+    width: 10%;
+    min-width: 10%;
+}
+.w20{
+    width: 20%;
+    min-width: 20%;
+}
+.w40{
+    width: 40%;
+    min-width: 40%;
+}
+.w60{
+    width: 60%;
+    min-width: 60%;
+}
+.w80{
+    width: 80%;
+    min-width: 80%;
+}
+.w100{
+    width: 100%;
+    min-width: 100%;
+}
+/* classe pour le flex */
+.flex{
+    /* activation des flexbox */
+    display:flex;
+    /* 
+        Direction du flex: par défaut c'est row
+        row : affichage en ligne
+        column: affichage en colonne
+        row-reverse: en ligne en sens inverse
+        column-reverse: en colonne en sens inverse
+    */
+    flex-direction: row;
+    /* Alignement */
+    justify-content: flex-start;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+.flex>*{
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.flex>img{
+    min-width: 10%;
+    max-width: 20%;
+}
